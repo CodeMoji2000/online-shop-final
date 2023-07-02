@@ -1,0 +1,50 @@
+.mega-menu {
+  display: none;
+  left: 0;
+  position: absolute;
+  direction: rtl;
+  text-align: right;
+  width: 100%;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.toggleable > label:after {
+  content: "\25BC";
+  font-size: 10px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
+}
+
+.toggle-input {
+  display: none;
+}
+.toggle-input:not(checked) ~ .mega-menu {
+  display: none;
+}
+
+.toggle-input:checked ~ .mega-menu {
+  display: block;
+}
+
+.toggle-input:checked + label {
+  color: white;
+  background: rgb(3, 102, 114);
+}
+
+.toggle-input:checked ~ label:after {
+  content: "\25B2";
+  font-size: 10px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
+}
+.bc{
+  display: none;
+
+}
+.ab:hover .bc{
+  display: block;
+}

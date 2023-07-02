@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Lalezar";
+  src: local("Lalezar"), url(./fonts/Lalezar.ttf) format("truetype");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: "Yekan";
+  src: local("Yekan"), url(./fonts/Yekan.ttf) format("truetype");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@layer utilities {
+  @variants responsive {
+    .rtl {
+      direction: rtl;
+    }
+    .ltr {
+      direction: ltr;
+    }
+    .mt-100 {
+      margin-top: 200px;
+    }
+    .mb-100 {
+      margin-bottom: 200px;
+    }
+    .h-400px {
+      height: 400px;
+    }
+    .h-800px {
+      height: 800px;
+    }
+  }
+}
